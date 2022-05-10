@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa;
+    display: grid;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #7cbdf1;
+}
+
+.container {
+    display: grid;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    width: 315px;
+    height: 80px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px #e6e1e1;
+    overflow: hidden;
+}
+
+.link {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 0 10px;
+    color:#157cd1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+
+    &:visited {
+        color:#1160a0
+    }
+}
+
+span {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.author {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color:#157cd1;  
+}
+
+.date {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color:#157cd1;
+}
+
+.load-btn{
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0 90px 20px 90px;
+    box-shadow: 5px 5px 5px #e6e1e1;
+    background-color: #157cd1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color:#fafafa;
+
+    &:hover {
+        background-color: #7cbdf1;
+    }
+}
+
+footer{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 0.7rem;
+    color: black;
+
+    a{
+        color: black;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 540px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    .container {
+        width: 375px;
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 649px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 800px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .container {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .container {
+        width: 700px;
+    }
+}
