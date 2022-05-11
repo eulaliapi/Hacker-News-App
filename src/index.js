@@ -7,7 +7,7 @@ const loadBtn = document.querySelector('.load-btn');
 const mainBox = document.querySelector('.main-box');
 
 const getNews = () => {
-    axios.get(process.env.HACKER_NEWS_API)
+    axios.get("https://hacker-news.firebaseio.com/v0/newstories.json")
     .then(res => dividingArr(res.data))
     .catch(err => console.log(err));
 };
