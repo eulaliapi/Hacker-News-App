@@ -29,7 +29,7 @@ module.exports = {
                 },
             },
             {
-                test: /\.svg$/i,
+                test: /\.ico$/i,
                 type: 'asset/resource'
             },
         ],
@@ -39,7 +39,10 @@ module.exports = {
             title: 'Hacker News App',
             filename: 'index.html',
             template: 'src/template.html',
+            favicon: 'src/favicon.ico',
         }),
-        new Dotenv()
+        new Dotenv({
+            systemvars: true
+        })
     ]
 }

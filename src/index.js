@@ -5,8 +5,12 @@ var _ = require('lodash');
 
 const loadBtn = document.querySelector('.load-btn');
 const mainBox = document.querySelector('.main-box');
+const body = document.querySelector('body');
 
 const getNews = () => {
+    
+    body.style.display = "grid";
+
     axios.get("https://hacker-news.firebaseio.com/v0/newstories.json")
     .then(res => dividingArr(res.data))
     .catch(err => console.log(err));
